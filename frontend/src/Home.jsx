@@ -1,4 +1,7 @@
 import React from 'react';
+import {
+    Text
+} from '@chakra-ui/react';
 
 
 /*
@@ -14,7 +17,7 @@ you do not need to implement interactivity or whizzy effects.
 function Home(props) {
     return (
         <div>
-            <h1>Home Page</h1>
+             <Text mt={5} fontSize={40}>Home</Text>
         </div>
     );
 }

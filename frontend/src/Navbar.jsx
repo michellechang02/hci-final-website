@@ -37,7 +37,7 @@ import {
             fontFamily="Roboto"
             fontWeight="bold"
           >
-            <t>Home</t>
+           Home
           </Button>
           <Button
             variant="ghost"
@@ -49,7 +49,7 @@ import {
             fontFamily="Roboto"
             fontWeight="bold"
           >
-            <t>Design Learnings</t>
+           Design Learnings
           </Button>
           
   

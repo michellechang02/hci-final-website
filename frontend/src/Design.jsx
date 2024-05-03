@@ -1,4 +1,5 @@
 import React from 'react';
+import {Text } from '@chakra-ui/react';
 
 
 /*
@@ -14,7 +15,7 @@ look a bit like what you see in this written reflection (though yours will be br
 function Design(props) {
     return (
         <div>
-            <h1>Design Learnings</h1>
+            <Text mt={5} fontSize={40}>Design Learnings</Text>
         </div>
     );
 }
