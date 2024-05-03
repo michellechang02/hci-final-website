@@ -1,8 +1,5 @@
-# React + Vite
-
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Deliverable 4: Website
+Share your work with the world by creating a public website for your interface. The website should include two pages:
+Home page: A home page that describes the purpose of your interface and conveys what it is like to interact with it. Aim for a page that looks like one of these examples (1, 2, 3)---though you do not need to implement interactivity or whizzy effects.
+Design learnings: Write a reflection (~1–2k words, with images) sharing your design learnings with your community of users. Describe what you learned about user needs, share particular anecdotes you found really motivating, crystallize what is wrong with current designs, and document the lessons you learned through iterative design about what makes an effective interface for the problem you’re addressing. Detail is going to be necessary for your reflection to be convincing. Your write up should include at least some quotes, anecdotes, images, and/or screenshots—whatever you think helps you convey your learnings in a clear way. Your write-up might look a bit like what you see in this written reflection (though yours will be briefer and represent more of a synthesis than a complete listing of all collected data).
+Your writing should be crisp and compelling, as should the visual design of the site. Incoherent or sloppy submissions will not be given credit.
