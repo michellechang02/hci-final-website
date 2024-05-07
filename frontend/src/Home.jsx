@@ -1,7 +1,10 @@
 import React from 'react';
 import {
-    Text
+    Heading,
+    Text,
+    Box, Flex, Image, Center, VStack, Button, Link
 } from '@chakra-ui/react';
+import { useNavigate } from 'react-router-dom';
 
 
 /*
@@ -13,12 +16,102 @@ you do not need to implement interactivity or whizzy effects.
 
 
 
-
 function Home(props) {
+
+  const navigate = useNavigate();
     return (
-        <div>
-             <Text mt={5} fontSize={40}>Home</Text>
-        </div>
+      <>
+      <Box
+      backgroundImage="Skincare.png"// Replace with your desired image URL
+      backgroundSize="cover" // Ensures the background image covers the entire Box area
+      backgroundPosition="center" // Centers the background image
+      minHeight="100vh" // Minimum height to cover the full view height
+    >
+        <VStack align="left" padding="20" spacing="4"> {/* Adjust alignment and spacing here */}
+        <Text fontSize="6xl" mt="150px">
+          Skincare Products <br/> Tailored for You
+        </Text>
+        <Text fontSize="3xl">
+          Use our personalized skincare quiz to find products <br/>
+          and quickly compare them side by side
+        </Text>
+        
+        <Button as={Link} href='https://skinmatcher.vercel.app/' variant="solid" textColor="white" bgColor="black"
+        mt="25px"
+        alignSelf="left" isExternal maxWidth="200px">
+          Go to our Website
+        </Button>
+      </VStack>
+    </Box>
+    <Box
+      backgroundSize="cover" // Ensures the background image covers the entire Box area
+      backgroundPosition="center" // Centers the background image
+      minHeight="100vh" // Minimum height to cover the full view height
+    >
+        <VStack align="left" padding="20" spacing="4"> {/* Adjust alignment and spacing here */}
+        <Text fontSize="6xl">
+          How to Interact with our Website
+        </Text>
+        <Flex justifyContent="space-around" align="center" p={5}>
+  <Box
+    p="5"
+    maxW="sm"
+    borderWidth="1px"
+    borderRadius="lg"
+    overflow="hidden"
+    boxShadow="md"
+  >
+    <Image borderRadius="md" src="quiz.png"/>
+    <Text mt="2" fontSize="xl" fontWeight="semibold" lineHeight="short">
+      Personalized Quizzes
+    </Text>
+    <Text mt="2">
+      [Main Feature] Fill out the personalized quizzes to get recommendations for skincare products
+      <br/> based on your specific skin type and needs
+    </Text>
+  </Box>
+
+  <Box
+    p="5"
+    maxW="sm"
+    borderWidth="1px"
+    borderRadius="lg"
+    overflow="hidden"
+    boxShadow="md"
+  >
+    <Image borderRadius="md" src="compare.png"/>
+    <Text mt="2" fontSize="xl" fontWeight="semibold" lineHeight="short">
+      Compare Products
+    </Text>
+    <Text mt="2">
+     [Secondary Feature] At the top, there will be the top 5 product recommendations for you.
+     Choose from those, or find your own products you want to compare, and then
+     compare them side by side for price, brand, and etc.
+    </Text>
+  </Box>
+
+  <Box
+    p="5"
+    maxW="sm"
+    borderWidth="1px"
+    borderRadius="lg"
+    overflow="hidden"
+    boxShadow="md"
+  >
+    <Image borderRadius="md" src="products.png"/>
+    <Text mt="2" fontSize="xl" fontWeight="semibold" lineHeight="short">
+      Product/Products Search
+    </Text>
+    <Text mt="2">
+     Get a list of products, and search for a specific product by using our search feature 
+     inside our Navigation bar. Also, the products page has a list of products you may want to search for!
+    </Text>
+  </Box>
+</Flex>
+        
+      </VStack>
+    </Box>
+    </>
     );
 }
 
