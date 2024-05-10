@@ -7,6 +7,7 @@ import find_initial from "./images/find_initial.png";
 import home_initial from "./images/home_initial.png";
 import compare_initial from "./images/compare_initial.png";
 import final_design from "./images/final_design.png";
+import design1 from "./images/design1.png";
 // import design2 from "./images/design2.png";
 // import design2 from "./images/design2.png";
 
@@ -95,8 +96,9 @@ function Design(props) {
         <Heading fontSize={24}>Early Sketches</Heading>
         <Text>
           We had two early sketches of what our web application would look like.
-          Sketch 1:{" "}
         </Text>
+        <Text>Sketch 1:</Text>
+        <img src={design1} alt="design1" />
         <Text>Sketch 2:</Text>
         <img
           src={design2}
@@ -221,7 +223,6 @@ function Design(props) {
           and Sociolla to enhance user experience and minimize the site's
           perceived role as a middleman.
         </Text>
-        <Text>The original and changed version can be seen as such:</Text>
         <Heading fontSize={24}>More Revision</Heading>
         <Text>
           Engaging with our high-fidelity prototype and conducting an evaluation
